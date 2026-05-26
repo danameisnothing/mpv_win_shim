@@ -1,0 +1,12 @@
+parts of this project were originally from a personal project involving running modern mpv-windows builds on Windows Vista, which got repurposed and turned into a shim for Windows 8.1 instead. expect weird tooling because of that.
+
+requirements :
+- Dependency Explorer
+- CFF Explorer
+- LLVM-MinGW
+
+instructions for diy :
+TODO: incomplete
+- open `mpv.exe` in CFF Explorer, make sure to say "no" to loading only 40 MB of the file.
+- Go to "Import directory", replace `KERNEL32.dll` and `USER32.dll` to `k32r.dll` and `u32r.dll` respectively
+- svae the file
